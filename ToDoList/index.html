@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bright To-Do List</title>
+    <!-- Importing a friendly, rounded font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>☀️ My Day</h1>
+            <p id="date"></p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="What needs to be done?">
+            <button type="button" id="add-btn">Add</button>
+        </div>
+
+        <ul id="todo-list">
+            <!-- Tasks will be added here dynamically -->
+        </ul>
+
+        <div class="task-stats">
+            <span id="task-count">0 pending tasks</span>
+            <button type="button" id="clear-btn">Clear All</button>
+        </div>
+
+        <div class="filter-group">
+            <button type="button" class="filter-btn active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="active">Active</button>
+            <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="footer-info">
+            <p>Click a task to mark as done!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
